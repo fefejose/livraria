@@ -11,9 +11,24 @@ public class Livro {
     public double  valor;
     public int paginas;
 
+public void  exibirDadosLivro(){
 
+  System.out.println("----------");
+  System.out.println("Nome:" + titulo);
+  System.out.println("Resumo :" + resumo);
+  System.out.println("Preço :" + valor);
+  System.out.println("Paginas :" + paginas);
+  if (temEditora()==true)
+  System.out.println("Editora :" + editora.nome);
+
+}
+public  boolean temEditora(){
+  if (editora == null)
+    return false;
+  else
+    return true;
+
+
+}
     //Métodos
 }
-
-
-
